@@ -3,9 +3,8 @@ library(tidyverse)
 library(data.table)
 
 ## Load in Uncleaned data
-
-training_dataset <- read.table("C:/Users/HP/Documents/UCI HAR Dataset/train/X_train.txt")
-testing_dataset <- read.table("C:/Users/HP/Documents/UCI HAR Dataset/test/X_test.txt")
+training_dataset <- read.table("./UCI HAR Dataset/train/X_train.txt")
+testing_dataset <- read.table("./UCI HAR Dataset/test/X_test.txt")
 
 ## Load in feature names
 feature_names <- read.table("C:/Users/HP/Documents/UCI HAR Dataset/features.txt")
@@ -71,3 +70,6 @@ final_names <- sapply(names(ending_tidy_set), function(x) (
   paste('Average',x,sep = " ")))
 names(final_summary) <- final_names
 rm(final_names); gc()
+
+## Write table 
+write.table(final_summary,row.name = FALSE,file = './final_table')
