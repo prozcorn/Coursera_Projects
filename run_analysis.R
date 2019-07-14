@@ -72,4 +72,4 @@ names(final_summary) <- final_names
 rm(final_names); gc()
 
 ## Write table 
-write.table(final_summary,row.name = FALSE,file = './final_table')
+write.table(final_summary,row.name = FALSE,file = './final_table.txt')
