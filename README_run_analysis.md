@@ -1,0 +1,2 @@
+The run_analysis.R file is used to take data from the link 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and turn it into two tidy datasets. One of the intial vairables and one with the average of each variable grouped by activity and subject number. The codebook file describes the variables and the transformations made to the data.
